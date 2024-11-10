@@ -1,23 +1,70 @@
-from typing import final
 
-print ("Welcom to the tip calculator")
-bill = float(input ("What was the total bill :? "))
-tip = float(input("How much tip would you like to give ? 10 , 12 , or 15 ?: "))
-nbr_personne = int(input ("How many people to split th bill ? : "))
+# weight = 185
+# height = 1.85
+#
+# bmi = weight / (height ** 2)
+# print (round (bmi,2))
+#
+# if   bmi < 18.5 :
+#     print ("Underweight")
+#
+# elif 18.5 <= bmi <= 24.9 :
+#      print ("Normal weight")
+#
+# else :
+#     print ("Overweight")
 
-bill_percent = bill * (tip / 100)
-total_bill = bill_percent + bill
-bill_per_personne = total_bill / nbr_personne
-final_amount = round(bill_per_personne,2)
-print(f"Each personne should pay : {final_amount}")
+# number_to_chek = int(input ("What is the number you want to chek ?:"))
+#
+# if number_to_chek % 2 == 0:
+#     print ("Even")
+# else:
+#     print ("0dd")
+#
+#
 
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Belouz208/formation_angela.git
-git push -u origin main
+print("Welcom to teh rollercoaster !")
+height = int (input("What is your height in cm ? "))
 
+if height >= 120 :
+    print ("you can ride the rollercoaster")
+    age = int(input("What is your age : ? "))
+    if age <=12:
+        bill = 5
+        print("Child tikets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tikets are $7.")
+    else:
+        bill = 12
+        print("Adult tikets are $12.")
+
+    wants_a_photo = input("Do you want a photo Y or N :")
+    if wants_a_photo.lower() == "y" :
+        bill +=3
+    print(f"Your final bill is {bill}")
+
+else:
+    print ("Sorry you have to grow taller before you can ride.")
+
+
+
+
+
+# ---------------------------------Day 2---------------------------------------
+
+# print ("Welcom to the tip calculator")
+# bill = float(input ("What was the total bill :? "))
+# tip = float(input("How much tip would you like to give ? 10 , 12 , or 15 ?: "))
+# nbr_personne = int(input ("How many people to split th bill ? : "))
+#
+# bill_percent = bill * (tip / 100)
+# total_bill = bill_percent + bill
+# bill_per_personne = total_bill / nbr_personne
+# final_amount = round(bill_per_personne,2)
+# print(f"Each personne should pay : {final_amount}")
+#
+#
 
 # bmi = 105/1.81*2
 # print (bmi)
