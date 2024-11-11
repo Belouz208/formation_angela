@@ -1,43 +1,110 @@
-test
+
+
+
+# def greet(somthing):
+#     print("Hello")
+#     print("How do you do ?: ")
+#     print("Isn't the weather nice ?:  ")
+#
+# greet()
+
+def life_in_weeks(age) :
+    age = int (age)
+    years_left = 90 - age
+
+    weeks_left = years_left * (12*4)
+
+    print (f"You have {weeks_left} weeks left. ")
+
+life_in_weeks(45)
+
+
+
+
+
+# ---------------------------------------day 7 ---------------------------------------------
+# import random
+#
+# secret_word_liste = ["halim","nassim","sami","salim","nada","wissam","hana"]
+# secret_word_to_find = random.choice(secret_word_liste)
+# print(secret_word_to_find)
+#
+# #initialise les blanc dans la liste
+# nbr_de_blanc = len(secret_word_to_find)
+# nbr_de_blanc_list = []
+# for i in range(0,nbr_de_blanc):
+#     nbr_de_blanc_list.append("-")
+# print(nbr_de_blanc_list)
+#
+# #converti le mot en une liste
+#
+# secret_word_choosen = list(secret_word_to_find)
+# # print(secret_word_choosen)
+#
+# nbr_life = 10
+# jackpot = False
+#
+# while nbr_life > 0 and not jackpot:
+#
+#     print(f"Il vous rest {nbr_life} vie")
+#     print(nbr_de_blanc_list)
+#     character = input("Entree un character :").lower()
+#
+#     for i in range (0,nbr_de_blanc):
+#         if character == secret_word_choosen [i]:
+#             nbr_de_blanc_list[i] = character
+#
+#         if nbr_de_blanc_list == secret_word_choosen :
+#             jackpot = True
+#             print("Jackpot")
+#
+#     nbr_life -=1
+#
+#
+# if not jackpot :
+#     print ("Game Over")
+#
+# #print (nbr_de_blanc_list)
+#
 # ---------------------------------------day 5 ---------------------------------------------
 
 # generature de mot de pass
-list_letter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
-               "v", "w", "x", "y", "z",
-               "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U",
-               "V", "W", "X", "Y", "Z"]
-list_nombres = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
-list_symboles = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+",
-                 "{", "}", "[", "]", ":", ";", "'", "<", ">", ",", ".", "?", "/", "|", "~", "`"
-                 ]
-
-print("Password Generator")
-nbr_of_letter = int(input("How many letter do you nwant in your password :"))
-nbr_of_numbers = int(input("How many number do you want in your password "))
-nbr_of_symbol = int(input("How many symbol do you want in your password "))
-
-password_list = []
-
-for char in range(0, nbr_of_letter):
-    password_list.append(random.choice(list_letter))
-    print(password_list)
-
-for nombre in range(0, nbr_of_numbers):
-    password_list.append(random.choice(list_nombres))
-    print(password_list)
-
-for symb in range(0, nbr_of_symbol):
-    password_list.append(random.choice(list_symboles))
-    print(password_list)
-
-random.shuffle(password_list)
-
-final_password =""
-for char in password_list:
-    final_password+=char
-
-print(final_password)
+# list_letter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
+#                "v", "w", "x", "y", "z",
+#                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U",
+#                "V", "W", "X", "Y", "Z"]
+# list_nombres = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+#
+# list_symboles = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+",
+#                  "{", "}", "[", "]", ":", ";", "'", "<", ">", ",", ".", "?", "/", "|", "~", "`"
+#                  ]
+#
+# print("Password Generator")
+# nbr_of_letter = int(input("How many letter do you nwant in your password :"))
+# nbr_of_numbers = int(input("How many number do you want in your password "))
+# nbr_of_symbol = int(input("How many symbol do you want in your password "))
+#
+# password_list = []
+#
+# for char in range(0, nbr_of_letter):
+#     password_list.append(random.choice(list_letter))
+#     print(password_list)
+#
+# for nombre in range(0, nbr_of_numbers):
+#     password_list.append(random.choice(list_nombres))
+#     print(password_list)
+#
+# for symb in range(0, nbr_of_symbol):
+#     password_list.append(random.choice(list_symboles))
+#     print(password_list)
+#
+# random.shuffle(password_list)
+#
+# final_password =""
+# for char in password_list:
+#     final_password+=char
+#
+# print(final_password)
 
 
 #     final_password += password (pass_wrd_index)
