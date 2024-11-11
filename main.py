@@ -1,5 +1,4 @@
-import random
-
+test
 # ---------------------------------------day 5 ---------------------------------------------
 
 # generature de mot de pass
@@ -44,6 +43,8 @@ print(final_password)
 #     final_password += password (pass_wrd_index)
 # print (f"le mot de pass final et {final_password}")
 
+
+# ---------------------------------Day 5---------------------------------------
 # weight = 185
 # height = 1.85
 #
